@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Awesome Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
   </head>
   <body>
     <header class="hero-box">
@@ -22,54 +23,95 @@
       </section>
     </header>
     <!--Begin Portfolio Gallery-->
-    <section class="portfolio-gallery">
+    <section class="portfolio-container">
       <h1>Portfolio</h1>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/IMG_6824.JPG">
-          <img class="gallery-img" src="img/IMG_6824.JPG" alt="harry styles"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/giphy.gif">
-          <img class="gallery-img" src="img/giphy.gif" alt="sunflower gif"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/IMG_4344.jpeg">
-          <img class="gallery-img" src="img/IMG_4344.jpeg" alt="giraffe"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/IMG_4349.jpeg">
-          <img class="gallery-img" src="img/IMG_4349.jpeg" alt="giraffe eating"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/lp_image 2.jpeg">
-          <img class="gallery-img" src="img/lp_image 2.jpeg" alt="guinea pig"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/lp_image.jpeg">
-          <img class="gallery-img" src="img/lp_image.jpeg" alt="guinea pig"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Photo on 10-22-21 at 1.43 PM.jpg">
-          <img
-            class="gallery-img"
-            src="img/Photo on 10-22-21 at 1.43 PM.jpg"
-            alt="me and anna"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/Photo on 10-22-21 at 1.44 PM #3.jpg">
-          <img
-            class="gallery-img"
-            src="img/Photo on 10-22-21 at 1.44 PM #3.jpg"
-            alt="me and anna making a heart"
-        /></a>
-      </div>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/IMG_6824.JPG"
+            data-glightbox="title: Harry Styles; description: Harry singing"
+          >
+            <img class="gallery-img" src="img/IMG_6824.JPG" alt="harry styles"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/giphy.gif"
+            data-glightbox="title: Yellow Sunflower Gif; description: Sunflower gif"
+          >
+            <img class="gallery-img" src="img/giphy.gif" alt="sunflower gif"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/IMG_4344.jpeg"
+            data-glightbox="title: Giraffe; description: Giraffe chilling"
+          >
+            <img class="gallery-img" src="img/IMG_4344.jpeg" alt="giraffe"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/IMG_4349.jpeg"
+            data-glightbox="title: Giraffe; description: Giraffe eating"
+          >
+            <img
+              class="gallery-img"
+              src="img/IMG_4349.jpeg"
+              alt="giraffe eating"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/lp_image 2.jpeg"
+            data-glightbox="title: Simba; description: My guinea pig"
+          >
+            <img class="gallery-img" src="img/lp_image 2.jpeg" alt="guinea pig"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/lp_image.jpeg"
+            data-glightbox="title: Simba; description: My guinea pig"
+          >
+            <img class="gallery-img" src="img/lp_image.jpeg" alt="guinea pig"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Photo on 10-22-21 at 1.43 PM.jpg"
+            data-glightbox="title: Me and Anna; description: Us smiling with heart filter"
+          >
+            <img
+              class="gallery-img"
+              src="img/Photo on 10-22-21 at 1.43 PM.jpg"
+              alt="me and anna"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/Photo on 10-22-21 at 1.44 PM 3.jpg"
+            data-glightbox="title: Me and Anna; description: Us making a heart shape with our fingers"
+          >
+            <img
+              class="gallery-img"
+              src="img/Photo on 10-22-21 at 1.44 PM 3.jpg"
+              alt="me and anna making a heart"
+          /></a>
+        </div>
+      </section>
     </section>
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
