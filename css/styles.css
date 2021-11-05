@@ -12,6 +12,7 @@ body {
   padding: 0;
   min-height: 100%;
   max-height: 100%;
+  padding-bottom: 30rem;
 }
 
 *,
@@ -58,13 +59,22 @@ img {
   background-color: rgba(145, 73, 40, 0.4);
 }
 
-.hero-image {
+.hero-image,
+.hero-video {
+  display: grid;
   width: 100%;
   height: 100%;
   object-fit: cover;
   overflow: hidden;
 }
 
+.hero-video {
+  background-color: purple;
+  background-image: url("../img/harry styles_200.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .hero-text-box {
   grid-row: 1 / -1;
   grid-column: 1 / -1;
@@ -117,6 +127,37 @@ img {
 .gallery-img:hover {
   transform: scale(1.5);
 }
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1rem auto 0 auto;
+}
+.about-text {
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.about-text h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.about-social {
+  display: flex;
+  justify-content: start;
+}
+.about-social a {
+  color: black;
+  padding: 0 1rem 1rem 1rem;
+  font-size: 2rem;
+}
+.about-social a:hover {
+  color: pink;
+}
+.about-image img {
+  height: 100%;
+  object-fit: cover;
+}
 /* Media Queries Below */
 
 @media (min-width: 600px) {
@@ -129,10 +170,25 @@ img {
     font-size: 2.5rem;
     line-height: 2.5rem;
   }
-  .portfolio-container height: {
+  .portfolio-container h1 {
     font-size: 3rem;
     line-height: 3rem;
     padding-left: 1rem;
+  }
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .about-text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .about-social a {
+    font-size: 3rem;
   }
 }
 
@@ -152,5 +208,19 @@ img {
   .portfolio-container h1 {
     font-size: 6rem;
     line-height: 6rem;
+  }
+  .about-container {
+    max-width: 1400px;
+  }
+  .about-text h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .about-text p {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+  .about-social a {
+    font-size: 4rem;
   }
 }
