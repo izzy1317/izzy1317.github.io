@@ -22,7 +22,7 @@ body {
   margin: 0 auto;
   padding: 0;
   min-height: 100%;
-  max-height: 100%;
+  max-width: 100%;
   padding-bottom: 30rem;
 }
 
@@ -160,7 +160,7 @@ img {
   width: 100200%;
   position: absolute;
   top: 0;
-  bottom: 0;
+  left: 0;
   background-color: rgba(145, 73, 40, 0.4);
 }
 
@@ -192,13 +192,13 @@ img {
 .hero-heading {
   font-size: 3rem;
   line-height: 3rem;
-  color: rgb(245, 82, 164);
+  color: pink;
   text-transform: uppercase;
   font-weight: bold;
 }
 .hero-text {
   font-size: 2rem;
-  color: rgba(204, 85, 228, 0.582);
+  color: lightyellow;
 }
 
 .portfolio-container {
@@ -208,7 +208,7 @@ img {
 .portfolio-container h1 {
   font-size: 2rem;
   line-height: 2rem;
-  color: purple;
+  color: lightpink;
 }
 
 .portfolio-gallery {
